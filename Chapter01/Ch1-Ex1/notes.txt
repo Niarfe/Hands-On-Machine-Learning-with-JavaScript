@@ -1,0 +1,5 @@
+https://stackoverflow.com/questions/52092739/upgrade-to-babel-7-cannot-read-property-bindings-of-null
+
+Note the changes in package.json to use @babel/preset-env
+
+Also had to install `yarn @babel/preset-env -g` first
