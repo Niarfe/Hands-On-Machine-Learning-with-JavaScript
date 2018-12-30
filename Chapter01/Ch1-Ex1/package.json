@@ -7,13 +7,14 @@
   "license": "MIT",
   "scripts": {
     "build-web": "browserify src/index.js -o dist/index.js -t [ babelify --presets [ env ] ]",
-    "build-cli": "browserify src/index.js --node -o dist/index.js -t [ babelify --presets [ env ] ]",
+    "build-cli": "browserify src/index.js --node -o dist/index.js -t [ babelify --presets [ @babel/preset-env ] ]",
     "start": "yarn build-cli && node dist/index.js"
   },
   "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "babel-core": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babelify": "^8.0.0",
+    "babelify": "^10.0.0",
     "browserify": "^15.1.0"
   }
 }
